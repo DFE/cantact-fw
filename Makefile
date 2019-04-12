@@ -17,7 +17,7 @@ SOURCES = main.c usbd_conf.c usbd_cdc_if.c usb_device.c usbd_desc.c stm32f0xx_ha
 TARGET = CANtact-b$(BUILD_NUMBER)
 
 # BUILD_DIR: directory to place output files in
-BUILD_DIR = build
+BUILD_DIR = debug
 
 # LD_SCRIPT: location of the linker script
 LD_SCRIPT = STM32F042C6_FLASH.ld
@@ -47,11 +47,11 @@ TARGET_DEVICE = STM32F042x6
 #######################################
 # binaries
 #######################################
-CC = arm-none-eabi-gcc
-AR = arm-none-eabi-ar
-RANLIB = arm-none-eabi-ranlib
-SIZE = arm-none-eabi-size
-OBJCOPY = arm-none-eabi-objcopy
+CC = arm-atollic-eabi-gcc
+AR = arm-atollic-eabi-ar
+RANLIB = arm-atollic-eabi-ranlib
+SIZE = arm-atollic-eabi-size
+OBJCOPY = arm-atollic-eabi-objcopy
 MKDIR = mkdir -p
 #######################################
 
