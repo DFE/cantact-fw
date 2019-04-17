@@ -206,7 +206,6 @@ void SystemClock_Config(void)
 		PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
 		PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
     }
-
 //#elif defined EXTERNAL_OSCILLATOR
     else // CLOCK_MODE IPREC MASTER or SLAVE
     {
